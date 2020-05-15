@@ -1,0 +1,8 @@
+The is Mean Application
+Angular login system in front end
+REST API's in nodejs, express, passportjs
+
+Training youtube ref-
+https://www.youtube.com/watch?v=IlpU1z3cvSQ
+https://www.youtube.com/watch?v=ma9tKRR0dGk
+https://www.youtube.com/watch?v=65ByX1mMLY0
