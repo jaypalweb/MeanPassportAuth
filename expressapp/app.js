@@ -16,7 +16,7 @@ app.use(cors({
 
 var mongoose = require('mongoose');
 
-mongoose.connect('mongodb://localhost/meanpassportauth');
+mongoose.connect('mongodb://localhost/meanpassportauth', { useUnifiedTopology: true, useNewUrlParser: true });
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
