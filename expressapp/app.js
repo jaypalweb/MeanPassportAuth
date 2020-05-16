@@ -14,6 +14,9 @@ app.use(cors({
   credentials: true
 }));
 
+var mongoose = require('mongoose');
+
+mongoose.connect('mongodb://localhost/meanpassportauth');
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
