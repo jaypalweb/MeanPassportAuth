@@ -15,8 +15,26 @@ app.use(cors({
 }));
 
 var mongoose = require('mongoose');
-
 mongoose.connect('mongodb://localhost/meanpassportauth', { useUnifiedTopology: true, useNewUrlParser: true });
+
+//passport
+var passport = require('passport');
+var session = require('express-session');
+
+app.use(session({
+  name: 'myname.sid',
+  resave: false,
+  saveUninitialized: false,
+  cookie: {
+    maxAge: 36000000,
+    httpOnly: false,
+    secure: false
+  }
+}));
+
+require('./passport-config');
+app.use(passport.session());
+app.use(passport.initialize());
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
