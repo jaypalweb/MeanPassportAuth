@@ -6,3 +6,7 @@ Training youtube ref-
 https://www.youtube.com/watch?v=IlpU1z3cvSQ
 https://www.youtube.com/watch?v=ma9tKRR0dGk
 https://www.youtube.com/watch?v=65ByX1mMLY0
+
+
+Not passport uses cookie. So the domain of frontend and backend need to be same.
+Use JWT or other token based authentication when the domains are different.
