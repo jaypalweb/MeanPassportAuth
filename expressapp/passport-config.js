@@ -1,5 +1,6 @@
 //ref- http://www.passportjs.org/docs/username-password/
 //ref- http://www.passportjs.org/packages/
+//ref- http://www.passportjs.org/docs/downloads/html/   custom callbacks etc
 
 var passport = require('passport')
     , LocalStrategy = require('passport-local').Strategy;

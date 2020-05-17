@@ -25,6 +25,7 @@ app.use(session({
   name: 'myname.sid',
   resave: false,
   saveUninitialized: false,
+  secret: 'secret',
   cookie: {
     maxAge: 36000000,
     httpOnly: false,
@@ -33,8 +34,8 @@ app.use(session({
 }));
 
 require('./passport-config');
-app.use(passport.session());
 app.use(passport.initialize());
+app.use(passport.session());
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
